@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Garagem de Economista</title>
+    <description>Este é meu blog pessoal para compartilhar assuntos de meu interesse, que tangenciam os vários assuntos da economia. Gosto muito de  programação, teoria econômica, filosofia da ciência, matemática,  psicologia e história do pensamento econômico. Tudo isso (e mais um pouco) será postado aqui.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 31 May 2019 22:00:57 -0300</pubDate>
+    <lastBuildDate>Fri, 31 May 2019 22:00:57 -0300</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Boas práticas matemáticas</title>
+        <description>&lt;p&gt;Este post trará algumas práticas matemáticas que eu considero boas e adequadas
+tanto para alguém que está lendo matemática, quanto para o próprio autor não
+se confundir em sua notação. Sem mais delongas, vamos a elas:&lt;/p&gt;
+
+&lt;h1 id=&quot;o-mathbbrd-e-suas-coordenadas&quot;&gt;O $\mathbb{R}^d$ e suas coordenadas&lt;/h1&gt;
+
+&lt;p&gt;Minha primeira sugestão é reservar reservar a letra $n$ para
+sequências e a letra $d$ para a dimensão do espaço euclidiano.
+Isto é, dada a sequência &lt;script type=&quot;math/tex&quot;&gt;\{ x_n \}_{n \in \mathbb{N}}&lt;/script&gt;, escrevemos
+$x_n$ para denotar o seu enésimo termo. Por outro lado, $\mathbb{R}^d$ é o produto
+cartesiano de $\mathbb{R}$ $d$ vezes.&lt;/p&gt;
+
+&lt;p&gt;Minha próxima sugestão também envolve sequências e coordenadas do espaço
+euclidiano. Normalmente escrevemos um vetor $v \in \mathbb{R}^d$ da seguinte maneira:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v = (v_1, \ v_2, \ldots, \ v_d)&lt;/script&gt;
+
+&lt;p&gt;Caso quiséssemos tomar uma sequência &lt;script type=&quot;math/tex&quot;&gt;\{ v_n \}_{n \in \mathbb{N}} \subseteq \mathbb{R}^d&lt;/script&gt;,
+representaríamos as coordenadas do vetor assim:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_n = (v_{1, n}, \ v_{2, n}, \ldots, \ v_{d, n})&lt;/script&gt;
+
+&lt;p&gt;Mas essa notação é extremamente confusa! Portanto, é mais adequado reservarmos
+a notação abaixo para representar as coordenadas:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v = (v[1], \ v[2], \ldots, \  v[d])&lt;/script&gt;
+
+&lt;p&gt;Esta notação é vantajosa em duas maneiras: ela explicita automaticamente que
+estamos tratando de coordenadas e conseguimos deixamos o subscrito livre. Ela é inspirada
+em linguagens de programação, como Matlab, Python e R, que indicam as coordenadas
+através de colchetes.&lt;/p&gt;
+
+&lt;p&gt;Note como a sequência anterior fica mais limpa:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_n = (v_n[1], \ v_n[2], \ldots, \ v_n[d])&lt;/script&gt;
+
+&lt;p&gt;O lado ruim dessa notação é que ela é mais trabalhosa de escrever manualmente, pois
+ é preciso abrir e fechar colchetes a cada coordenada.&lt;/p&gt;
+
+&lt;h1 id=&quot;conjunto-de-índices&quot;&gt;Conjunto de índices&lt;/h1&gt;
+
+&lt;p&gt;Digamos que você queira dizer que uma certa propriedade $P$ vale para os números
+$x_1, x_2, \ldots, x_k$. Abaixo estão quatro maneiras de escrever formalmente isso:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i \in \{1, 2, \ldots, k\}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i = 1, 2, \ldots, k&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall 1 \leq i \leq k&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i \in [k] \label{indices}&lt;/script&gt;
+
+&lt;p&gt;Minha recomendação é que se use o padrão definido em \eqref{indices}, por economizar
+tempo e espaço de escrita. Como é uma notação menos usual, você precisa definir
+ao leitor que usará ela no início de seu texto!&lt;/p&gt;
+
+&lt;h1 id=&quot;definindo-novas-variáveis&quot;&gt;Definindo novas variáveis&lt;/h1&gt;
+
+&lt;p&gt;Falando em definições, existe uma notação que é muito amigável ao leitor na hora
+de introduzir variáveis novas. Suponha que você já tenha a variável $x$ e a variável
+$y$ e quer introduzir uma nova variável $z$, que é a diferença das duas. Ao invés de escrever
+$z = x - y$, é bacana escrever&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;z := x - y&lt;/script&gt;
+
+&lt;p&gt;pois torna explícito que você está construindo uma variável nova.&lt;/p&gt;
+
+&lt;p&gt;Adicionarei novas boas práticas com o tempo.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 31 May 2019 22:00:00 -0300</pubDate>
+        <link>http://localhost:4000/mypost/2019/05/31/boas-praticas-matematicas.html</link>
+        <guid isPermaLink="true">http://localhost:4000/mypost/2019/05/31/boas-praticas-matematicas.html</guid>
+        
+        
+        <category>mypost</category>
+        
+      </item>
+    
+  </channel>
+</rss>
