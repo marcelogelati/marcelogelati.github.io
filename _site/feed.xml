@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 31 May 2019 22:00:57 -0300</pubDate>
-    <lastBuildDate>Fri, 31 May 2019 22:00:57 -0300</lastBuildDate>
+    <pubDate>Sat, 15 Jun 2019 18:56:18 -0300</pubDate>
+    <lastBuildDate>Sat, 15 Jun 2019 18:56:18 -0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -79,14 +79,46 @@ $z = x - y$, é bacana escrever&lt;/p&gt;
 
 &lt;p&gt;pois torna explícito que você está construindo uma variável nova.&lt;/p&gt;
 
-&lt;p&gt;Adicionarei novas boas práticas com o tempo.&lt;/p&gt;
+&lt;p&gt;Por exemplo, para ilustrar a seção anterior, suponha que o leitor não
+conheça o significado de $[k]$. Informamos ao leitor nossa definição da seguinte maneira:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Definimos} \  [k] := \{1, \ldots, k \} \subseteq \mathbb{N}&lt;/script&gt;
+
+&lt;h1 id=&quot;subconjuntos&quot;&gt;Subconjuntos&lt;/h1&gt;
+
+&lt;p&gt;Você deve ter notado que utilizei o símbolo $\subseteq$ para indicar acima
+o subconjunto dos naturais. Parece estranho, pois sabemos que $[k]$ é um subconjunto
+próprio dos naturais - isto é, $[k] \subseteq \mathbb{N}$ e $[k] \neq \mathbb{N}$.
+Então, por que não usar $\subset$?&lt;/p&gt;
+
+&lt;p&gt;Vejo três vantagens em usar $\subseteq$. Uma delas é que fica explícito ao leitor
+que o subconjunto pode ser próprio ou igual ao conjunto inteiro. Claro, $\subset$ também
+cumpre essa função, mas um leitor incauto pode achar que a notação $\subset$ se
+trata da notação para subconjuntos próprios.&lt;/p&gt;
+
+&lt;p&gt;A segunda vantagem é que podemos usar $\varsubsetneq$ para tratar de subconjuntos
+próprios automaticamente. Isto é, podemos escrever $[k] \varsubsetneq \mathbb{N}$
+e poupar linhas de escrita. Se fôssemos usar $\subset$ e quiséssemos explicitar
+que $[k]$ é um subconjunto próprio, teríamos que escrever $[k] \subset \mathbb{N}$ mas
+$\mathbb{N} \not\subset [k]$.&lt;/p&gt;
+
+&lt;p&gt;A terceira vantagem refere-se à escrita no papel. Suponha que tenhamos um conjunto
+$A$, um conjunto $C$, que $A$ é subconjunto de $C$ e que usamos a notação
+$\subset$. Então, escreveríamos $A \subset C$. O problema é que
+$C$ e $\subset$ ficam muito parecidos no papel! Fica esteticamente horrível e confuso.
+Com a notação $\subseteq$ podemos driblar este problema, pois escreveríamos
+$A \subseteq C$.&lt;/p&gt;
+
+&lt;p&gt;Escreverei mais práticas com o passar do tempo. Se tiverem alguma sugestão
+ou não concordarem com o que escrevi acima, podem enviar um email para
+marcelogelati@impa.br me contatando.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 31 May 2019 22:00:00 -0300</pubDate>
-        <link>http://localhost:4000/mypost/2019/05/31/boas-praticas-matematicas.html</link>
-        <guid isPermaLink="true">http://localhost:4000/mypost/2019/05/31/boas-praticas-matematicas.html</guid>
+        <pubDate>Sat, 15 Jun 2019 16:00:00 -0300</pubDate>
+        <link>http://localhost:4000/post/2019/06/15/boas-praticas-matematicas.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2019/06/15/boas-praticas-matematicas.html</guid>
         
         
-        <category>mypost</category>
+        <category>post</category>
         
       </item>
     

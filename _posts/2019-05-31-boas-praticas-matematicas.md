@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Boas práticas matemáticas"
-date:   2019-05-31 22:00:00 -0300
-categories: mypost
+date:   2019-06-15 16:00:00 0000
+categories: post
 ---
 
 Este post trará algumas práticas matemáticas que eu considero boas e adequadas
@@ -72,4 +72,36 @@ $$z := x - y$$
 
 pois torna explícito que você está construindo uma variável nova.
 
-Adicionarei novas boas práticas com o tempo.
+Por exemplo, para ilustrar a seção anterior, suponha que o leitor não
+conheça o significado de $[k]$. Informamos ao leitor nossa definição da seguinte maneira:
+
+$$\text{Definimos} \  [k] := \{1, \ldots, k \} \subseteq \mathbb{N}$$
+
+# Subconjuntos
+
+Você deve ter notado que utilizei o símbolo $\subseteq$ para indicar acima
+o subconjunto dos naturais. Parece estranho, pois sabemos que $[k]$ é um subconjunto
+próprio dos naturais - isto é, $[k] \subseteq \mathbb{N}$ e $[k] \neq \mathbb{N}$.
+Então, por que não usar $\subset$?
+
+Vejo três vantagens em usar $\subseteq$. Uma delas é que fica explícito ao leitor
+que o subconjunto pode ser próprio ou igual ao conjunto inteiro. Claro, $\subset$ também
+cumpre essa função, mas um leitor incauto pode achar que a notação $\subset$ se
+trata da notação para subconjuntos próprios.
+
+A segunda vantagem é que podemos usar $\varsubsetneq$ para tratar de subconjuntos
+próprios automaticamente. Isto é, podemos escrever $[k] \varsubsetneq \mathbb{N}$
+e poupar linhas de escrita. Se fôssemos usar $\subset$ e quiséssemos explicitar
+que $[k]$ é um subconjunto próprio, teríamos que escrever $[k] \subset \mathbb{N}$ mas
+$\mathbb{N} \not\subset [k]$.
+
+A terceira vantagem refere-se à escrita no papel. Suponha que tenhamos um conjunto
+$A$, um conjunto $C$, que $A$ é subconjunto de $C$ e que usamos a notação
+$\subset$. Então, escreveríamos $A \subset C$. O problema é que
+$C$ e $\subset$ ficam muito parecidos no papel! Fica esteticamente horrível e confuso.
+Com a notação $\subseteq$ podemos driblar este problema, pois escreveríamos
+$A \subseteq C$.
+
+Escreverei mais práticas com o passar do tempo. Se tiverem alguma sugestão
+ou não concordarem com o que escrevi acima, podem enviar um email para
+marcelogelati@impa.br me contatando.
