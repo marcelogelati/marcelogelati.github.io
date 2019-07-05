@@ -53,7 +53,7 @@ $$x_i \ \text{tem propriedade} \ P \; \forall i \in \{1, 2, \ldots, k\}$$
 
 $$x_i \ \text{tem propriedade} \ P \; \forall i = 1, 2, \ldots, k$$
 
-$$x_i \ \text{tem propriedade} \ P \; \forall 1 \leq i \leq k$$
+$$x_i \ \text{tem propriedade} \ P \; \forall i \in \mathbb{N}, 1 \leq i \leq k$$
 
 $$x_i \ \text{tem propriedade} \ P \; \forall i \in [k] \label{indices}$$
 
