@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sobre</title>
-  <meta name="description" content="Este é meu blog pessoal para compartilhar assuntos de meu interesse, que tangenciam os vários assuntos da economia. Gosto muito de  programação, teoria econômica, filosofia da ciência, matemática,  psicologia e história do pensamento econômico. Tudo isso (e mais um pouco) será postado aqui.
-">
+  <title>Topologia e mensurabilidade</title>
+  <meta name="description" content="O objetivo desse post é trazer informações básicas sobre espaços topológicos eespaços mensuráveis, apenas para aguçar a mente daqueles que ainda nãoestudam f...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/sobre/">
+  <link rel="canonical" href="http://localhost:4000/post/2019/09/09/topologia-e-medida.html">
   <link rel="alternate" type="application/rss+xml" title="Garagem de Economista" href="http://localhost:4000/feed.xml">
 
   <!-- <script type="text/x-mathjax-config">
@@ -78,20 +77,72 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">Sobre</h1>
-    <!-- <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script> -->
+    <h1 class="post-title" itemprop="name headline">Topologia e mensurabilidade</h1>
+    <p class="post-meta"><time datetime="2019-09-09T18:00:00-03:00" itemprop="datePublished">Sep 9, 2019</time></p>
   </header>
 
-  <div class="post-content">
-    <p>Este é um blog para economistas. Falarei de economia, psicologia, filosofia 
-da ciência e história do pensamento econômico, preferencialmente.</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>O objetivo desse post é trazer informações básicas sobre espaços topológicos e
+espaços mensuráveis, apenas para aguçar a mente daqueles que ainda não
+estudam formalmente isso, mas cujo interesse pela matemática se dá desde cedo.</p>
 
-<p>Qualquer dúvida ou sugestão, envie um e-mail para marcelogelati@impa.br.</p>
+<p>Primeiro, começo falando sobre topologia. Um objeto frequente na matemática é o
+conjunto aberto. Mas, o que é um conjunto aberto? Se estamos no conjunto $\mathbb{R}$, pensamos
+que os abertos são uniões de conjuntos do tipo</p>
+
+<script type="math/tex; mode=display">(-\infty, a), \ (b, \infty) \ \text{e} \ (a, b)</script>
+
+<p>onde $a, b \in \mathbb{R}$.</p>
+
+<p>Mas parece pouco geral e não clarifica nossa mente: por que definiríamos os abertos assim?
+E fora do $\mathbb{R}$, como definimos os abertos? Bom, podemos definir abertos de uma maneira mais
+“métrica”. Podemos dizer que um conjunto $A$ é aberto se para todo
+ponto $x$ de $A$ conseguimos achar uma bola aberta $B$ tal que $x$ está em $B$
+e $B$ está totalmente contido em $A$. Em símbolos, dizemos que $A$ é aberto se</p>
+
+<script type="math/tex; mode=display">\forall x \in A \  \exists B \ \text{onde B é uma bola aberta (em um sentido preciso) tal que} \\
+x \in B \ \text{e} \ B \subseteq A</script>
+
+<p>Curiosamente, na reta esta definição coincide com os conjuntos que eu disse que eram
+abertos acima.</p>
+
+<p>Antes de continuar, um breve comentário pelo bem de tornar tudo o mais explícito possível: a definição
+acima requer que $A$ seja um subconjunto de um espaço métrico, para podermos definir o que são bolas.
+No entanto, não se preocupe com isso. Não é o foco do texto.</p>
+
+<p>A definição acima é bastante geral. No entanto - e é aqui que eu quero chamar a atenção de vocês -
+um conjunto aberto pode ser algo mais geral ainda! Pode ser um objeto muito abstrato.
+O que é um aberto, então, segundo essa definição abstrata? Vamos lá, às formalidades!.</p>
+
+<p>Pegue um conjunto $X$. Vamos definir o que é topologia. Uma topologia $\tau$ é um
+conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:</p>
+
+<script type="math/tex; mode=display">1. \ \varnothing \in \tau, \ X \in \tau \\
+  2. \ \text{Se pegarmos uma família} \ \{V_{\alpha}\}, \ \text{onde cada} \ V_{\alpha} \in \tau, \\
+  \text{então} \ \bigcup_{\alpha} V_{\alpha} \in \tau \\
+  3. \ \text{Se pegarmos} \ V_1 \in \tau, \ldots, V_n \in \tau, \ \text{então} \ \bigcap\limits_{i = 1}^n V_i \in \tau</script>
+
+<p>Ufa, quanta formalização! Vou tentar explicar em português:</p>
+
+<ol>
+  <li>
+    <p>Este item quer dizer que o conjunto vazio $\varnothing$ e próprio conjunto $X$ são elementos de $\tau$;</p>
+  </li>
+  <li>
+    <p>Este item quer dizer que você pode pegar quantos conjuntos quiser de $\tau$ (quantos quiser mesmo! Pode ser finitos ou infinitos elementos,
+  enumeráveis ou não enumeráveis), e a união desses conjuntos ainda deve pertencer a $\tau$;</p>
+  </li>
+  <li>
+    <p>Este item quer dizer que se você pegar uma quantidade finita de conjuntos em $\tau$, então a intersecção desses
+  conjuntos deve estar em $\tau$.</p>
+  </li>
+</ol>
+
+<p>Agora, veja a mágica: dizemos que um conjunto $A$ de $X$ é aberto se $A \in \tau$.
+Sim, é só isso!</p>
 
   </div>
 
