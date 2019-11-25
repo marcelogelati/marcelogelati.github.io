@@ -73,3 +73,5 @@ Ufa, quanta formalização! Vou tentar explicar em português:
 
 Agora, veja a mágica: dizemos que um conjunto $A$ de $X$ é aberto se $A \in \tau$.
 Sim, é só isso! Todo elemento de $\tau$ é um aberto e todo aberto é elemento de $\tau$
+
+(INCOMPLETO)

@@ -6,9 +6,26 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Sep 2019 22:46:19 -0300</pubDate>
-    <lastBuildDate>Mon, 09 Sep 2019 22:46:19 -0300</lastBuildDate>
+    <pubDate>Sun, 24 Nov 2019 22:25:31 -0300</pubDate>
+    <lastBuildDate>Sun, 24 Nov 2019 22:25:31 -0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Quem me deu unfollow? Um script no R</title>
+        <description>&lt;p&gt;Criei um script para você verificar quem te seguiu ou parou de seguir no Twitter.
+O script é auto explicativo e pode ser baixado clicando &lt;a href=&quot;https://github.com/marcelogelati/marcelogelati.github.io/blob/master/unfollow.R&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Veja que o script funciona como se tirássemos duas fotos: uma no presente e outra no futuro.
+A função do código é simplesmente ver a diferença de seguidores entre um período e outro.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Nov 2019 19:00:00 -0300</pubDate>
+        <link>http://localhost:4000/post/2019/11/24/unfollow-R.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2019/11/24/unfollow-R.html</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>Topologia e mensurabilidade</title>
@@ -86,6 +103,8 @@ conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:&lt;/p&gt
 
 &lt;p&gt;Agora, veja a mágica: dizemos que um conjunto $A$ de $X$ é aberto se $A \in \tau$.
 Sim, é só isso! Todo elemento de $\tau$ é um aberto e todo aberto é elemento de $\tau$&lt;/p&gt;
+
+&lt;p&gt;(INCOMPLETO)&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Sep 2019 18:00:00 -0300</pubDate>
         <link>http://localhost:4000/post/2019/09/09/topologia-e-medida.html</link>
