@@ -117,6 +117,22 @@ No entanto, não se preocupe com isso. Não é o foco do texto.</p>
 um conjunto aberto pode ser algo mais geral ainda! Pode ser um objeto muito abstrato.
 O que é um aberto, então, segundo essa definição abstrata? Vamos lá, às formalidades!.</p>
 
+<p>Antes de definir o que é uma topologia, preciso especificar o que é um conjunto
+de subconjuntos de $X$. Para clarificar, vou mostrar um exemplo.
+Suponha que <script type="math/tex">X = \{a, b, c\}</script>. Então, o conjunto das partes de $X$, denotado por $\wp(X)$,
+é o conjunto de <em>todos</em> subconjuntos de $X$, isto é,</p>
+
+<script type="math/tex; mode=display">\wp(X) := \{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\} \}</script>
+
+<p>O conjunto acima é um conjunto de subconjuntos. Podemos pensar em um conjunto de subconjuntos
+menor, como por exemplo,</p>
+
+<script type="math/tex; mode=display">B := \{\{a\}, \{b, c\}, \{a, b\} \}</script>
+
+<p>Em outras palavras, um conjunto de subconjuntos de $X$ é um conjunto $M$ tal que
+se $A \in M$, então $A \subseteq X$. Veja o exemplo anterior para checar essa definição: temos que
+<script type="math/tex">\{b, c\} \in B</script> e $B \subseteq X$.</p>
+
 <p>Pegue um conjunto $X$. Vamos definir o que é topologia. Uma topologia $\tau$ é um
 conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:</p>
 
@@ -142,7 +158,7 @@ conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:</p>
 </ol>
 
 <p>Agora, veja a mágica: dizemos que um conjunto $A$ de $X$ é aberto se $A \in \tau$.
-Sim, é só isso!</p>
+Sim, é só isso! Todo elemento de $\tau$ é um aberto e todo aberto é elemento de $\tau$</p>
 
   </div>
 

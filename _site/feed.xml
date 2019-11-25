@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Sep 2019 21:48:55 -0300</pubDate>
-    <lastBuildDate>Mon, 09 Sep 2019 21:48:55 -0300</lastBuildDate>
+    <pubDate>Mon, 09 Sep 2019 22:46:19 -0300</pubDate>
+    <lastBuildDate>Mon, 09 Sep 2019 22:46:19 -0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -44,6 +44,22 @@ No entanto, não se preocupe com isso. Não é o foco do texto.&lt;/p&gt;
 um conjunto aberto pode ser algo mais geral ainda! Pode ser um objeto muito abstrato.
 O que é um aberto, então, segundo essa definição abstrata? Vamos lá, às formalidades!.&lt;/p&gt;
 
+&lt;p&gt;Antes de definir o que é uma topologia, preciso especificar o que é um conjunto
+de subconjuntos de $X$. Para clarificar, vou mostrar um exemplo.
+Suponha que &lt;script type=&quot;math/tex&quot;&gt;X = \{a, b, c\}&lt;/script&gt;. Então, o conjunto das partes de $X$, denotado por $\wp(X)$,
+é o conjunto de &lt;em&gt;todos&lt;/em&gt; subconjuntos de $X$, isto é,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\wp(X) := \{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\} \}&lt;/script&gt;
+
+&lt;p&gt;O conjunto acima é um conjunto de subconjuntos. Podemos pensar em um conjunto de subconjuntos
+menor, como por exemplo,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;B := \{\{a\}, \{b, c\}, \{a, b\} \}&lt;/script&gt;
+
+&lt;p&gt;Em outras palavras, um conjunto de subconjuntos de $X$ é um conjunto $M$ tal que
+se $A \in M$, então $A \subseteq X$. Veja o exemplo anterior para checar essa definição: temos que
+&lt;script type=&quot;math/tex&quot;&gt;\{b, c\} \in B&lt;/script&gt; e $B \subseteq X$.&lt;/p&gt;
+
 &lt;p&gt;Pegue um conjunto $X$. Vamos definir o que é topologia. Uma topologia $\tau$ é um
 conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:&lt;/p&gt;
 
@@ -69,7 +85,7 @@ conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:&lt;/p&gt
 &lt;/ol&gt;
 
 &lt;p&gt;Agora, veja a mágica: dizemos que um conjunto $A$ de $X$ é aberto se $A \in \tau$.
-Sim, é só isso!&lt;/p&gt;
+Sim, é só isso! Todo elemento de $\tau$ é um aberto e todo aberto é elemento de $\tau$&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Sep 2019 18:00:00 -0300</pubDate>
         <link>http://localhost:4000/post/2019/09/09/topologia-e-medida.html</link>
