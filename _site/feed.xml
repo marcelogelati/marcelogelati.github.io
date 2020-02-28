@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Nov 2019 22:25:31 -0300</pubDate>
-    <lastBuildDate>Sun, 24 Nov 2019 22:25:31 -0300</lastBuildDate>
+    <pubDate>Fri, 28 Feb 2020 16:24:18 -0300</pubDate>
+    <lastBuildDate>Fri, 28 Feb 2020 16:24:18 -0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -17,6 +17,13 @@ O script é auto explicativo e pode ser baixado clicando &lt;a href=&quot;https:
 
 &lt;p&gt;Veja que o script funciona como se tirássemos duas fotos: uma no presente e outra no futuro.
 A função do código é simplesmente ver a diferença de seguidores entre um período e outro.&lt;/p&gt;
+
+&lt;h1 id=&quot;atualização-28-02-20&quot;&gt;Atualização 28-02-20&lt;/h1&gt;
+
+&lt;p&gt;Temos um novo script mais eficiente e que usa apenas o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;rtweet&lt;/code&gt;.
+É preferível que usem este ao invés do disponibilizado acima, mas vou manter a
+versão antiga ali. Clique &lt;a href=&quot;https://github.com/marcelogelati/marcelogelati.github.io/blob/master/unfollow2.R&quot;&gt;aqui&lt;/a&gt;
+para baixar o novo código.&lt;/p&gt;
 </description>
         <pubDate>Sun, 24 Nov 2019 19:00:00 -0300</pubDate>
         <link>http://localhost:4000/post/2019/11/24/unfollow-R.html</link>
