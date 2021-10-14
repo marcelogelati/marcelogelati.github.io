@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/post/2019/06/15/boas-praticas-matematicas.html">
-  <link rel="alternate" type="application/rss+xml" title="Garagem de Economista" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Meu blog pessoal" href="http://localhost:4000/feed.xml">
 
   <!-- <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -44,7 +44,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Garagem de Economista</a>
+    <a class="site-title" href="/">Meu blog pessoal</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -93,24 +93,24 @@ se confundir em sua notação. Sem mais delongas, vamos a elas:</p>
 
 <p>Minha primeira sugestão é reservar reservar a letra $n$ para
 sequências e a letra $d$ para a dimensão do espaço euclidiano.
-Isto é, dada a sequência <script type="math/tex">\{ x_n \}_{n \in \mathbb{N}}</script>, escrevemos
+Isto é, dada a sequência \(\{ x_n \}_{n \in \mathbb{N}}\), escrevemos
 $x_n$ para denotar o seu enésimo termo. Por outro lado, $\mathbb{R}^d$ é o produto
 cartesiano de $\mathbb{R}$ $d$ vezes.</p>
 
 <p>Minha próxima sugestão também envolve sequências e coordenadas do espaço
 euclidiano. Normalmente escrevemos um vetor $v \in \mathbb{R}^d$ da seguinte maneira:</p>
 
-<script type="math/tex; mode=display">v = (v_1, \ v_2, \ldots, \ v_d)</script>
+\[v = (v_1, \ v_2, \ldots, \ v_d)\]
 
-<p>Caso quiséssemos tomar uma sequência <script type="math/tex">\{ v_n \}_{n \in \mathbb{N}} \subseteq \mathbb{R}^d</script>,
+<p>Caso quiséssemos tomar uma sequência \(\{ v_n \}_{n \in \mathbb{N}} \subseteq \mathbb{R}^d\),
 representaríamos as coordenadas do vetor assim:</p>
 
-<script type="math/tex; mode=display">v_n = (v_{1, n}, \ v_{2, n}, \ldots, \ v_{d, n})</script>
+\[v_n = (v_{1, n}, \ v_{2, n}, \ldots, \ v_{d, n})\]
 
 <p>Mas essa notação é extremamente confusa! Portanto, é mais adequado reservarmos
 a notação abaixo para representar as coordenadas:</p>
 
-<script type="math/tex; mode=display">v = (v[1], \ v[2], \ldots, \  v[d])</script>
+\[v = (v[1], \ v[2], \ldots, \  v[d])\]
 
 <p>Esta notação é vantajosa em duas maneiras: ela explicita automaticamente que
 estamos tratando de coordenadas e conseguimos deixamos o subscrito livre. Ela é inspirada
@@ -119,7 +119,7 @@ através de colchetes.</p>
 
 <p>Note como a sequência anterior fica mais limpa:</p>
 
-<script type="math/tex; mode=display">v_n = (v_n[1], \ v_n[2], \ldots, \ v_n[d])</script>
+\[v_n = (v_n[1], \ v_n[2], \ldots, \ v_n[d])\]
 
 <p>O lado ruim dessa notação é que ela é mais trabalhosa de escrever manualmente, pois
  é preciso abrir e fechar colchetes a cada coordenada.</p>
@@ -129,13 +129,13 @@ através de colchetes.</p>
 <p>Digamos que você queira dizer que uma certa propriedade $P$ vale para os números
 $x_1, x_2, \ldots, x_k$. Abaixo estão quatro maneiras de escrever formalmente isso:</p>
 
-<script type="math/tex; mode=display">x_i \ \text{tem propriedade} \ P \; \forall i \in \{1, 2, \ldots, k\}</script>
+\[x_i \ \text{tem propriedade} \ P \; \forall i \in \{1, 2, \ldots, k\}\]
 
-<script type="math/tex; mode=display">x_i \ \text{tem propriedade} \ P \; \forall i = 1, 2, \ldots, k</script>
+\[x_i \ \text{tem propriedade} \ P \; \forall i = 1, 2, \ldots, k\]
 
-<script type="math/tex; mode=display">x_i \ \text{tem propriedade} \ P \; \forall i \in \mathbb{N}, 1 \leq i \leq k</script>
+\[x_i \ \text{tem propriedade} \ P \; \forall i \in \mathbb{N}, 1 \leq i \leq k\]
 
-<script type="math/tex; mode=display">x_i \ \text{tem propriedade} \ P \; \forall i \in [k] \label{indices}</script>
+\[x_i \ \text{tem propriedade} \ P \; \forall i \in [k] \label{indices}\]
 
 <p>Minha recomendação é que se use o padrão definido em \eqref{indices}, por economizar
 tempo e espaço de escrita. Como é uma notação menos usual, você precisa definir
@@ -148,14 +148,14 @@ de introduzir variáveis novas. Suponha que você já tenha a variável $x$ e a 
 $y$ e quer introduzir uma nova variável $z$, que é a diferença das duas. Ao invés de escrever
 $z = x - y$, é bacana escrever</p>
 
-<script type="math/tex; mode=display">z := x - y</script>
+\[z := x - y\]
 
 <p>pois torna explícito que você está construindo uma variável nova.</p>
 
 <p>Por exemplo, para ilustrar a seção anterior, suponha que o leitor não
 conheça o significado de $[k]$. Informamos ao leitor nossa definição da seguinte maneira:</p>
 
-<script type="math/tex; mode=display">\text{Definimos} \  [k] := \{1, \ldots, k \} \subseteq \mathbb{N}</script>
+\[\text{Definimos} \  [k] := \{1, \ldots, k \} \subseteq \mathbb{N}\]
 
 <h1 id="subconjuntos">Subconjuntos</h1>
 
@@ -184,7 +184,7 @@ $A \subseteq C$.</p>
 
 <p>Escreverei mais práticas com o passar do tempo. Se tiverem alguma sugestão
 ou não concordarem com o que escrevi acima, podem enviar um email para
-marcelogelati@impa.br me contatando.</p>
+marcelogelati@gmail.com me contatando.</p>
 
   </div>
 
@@ -197,13 +197,13 @@ marcelogelati@impa.br me contatando.</p>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Garagem de Economista</h2>
+    <h2 class="footer-heading">Meu blog pessoal</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Garagem de Economista</li>
-          <li><a href="mailto:marcelogelati@impa.br">marcelogelati@impa.br</a></li>
+          <li>Meu blog pessoal</li>
+          <li><a href="mailto:marcelogelati@gmail.com">marcelogelati@gmail.com</a></li>
         </ul>
       </div>
 
@@ -218,17 +218,11 @@ marcelogelati@impa.br me contatando.</p>
           
 
           
-          <li>
-            <a href="https://twitter.com/marcelogelati"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
-</span><span class="username">marcelogelati</span></a>
-
-          </li>
-          
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Este é meu blog pessoal para compartilhar assuntos de meu interesse, que tangenciam os vários assuntos da economia. Gosto muito de  programação, teoria econômica, filosofia da ciência, matemática,  psicologia e história do pensamento econômico. Tudo isso (e mais um pouco) será postado aqui.
+        <p>Este é meu blog pessoal para compartilhar assuntos de meu interesse, A princípio, era para postar coisas acadêmicas que tangenciavam mais ou menos economia, mas hoje pretendo postar qualquer coisa que tiver vontade de postar.
 </p>
       </div>
     </div>

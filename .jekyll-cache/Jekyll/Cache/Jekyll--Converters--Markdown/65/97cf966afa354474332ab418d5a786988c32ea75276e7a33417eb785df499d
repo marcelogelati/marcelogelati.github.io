@@ -1,0 +1,5 @@
+I"�<p>Nesse post mostrarei como encontrar no R o equilíbrio de Nash de um jogo simultâneo, tanto em estratégias mistas como em estratégias puras. Isso será feito
+através do pacote <code class="language-plaintext highlighter-rouge">Recon</code>, criado pelo <a href="https://twitter.com/pedroocava">Pedro Cavalcante de Oliveira</a>
+e colaborado por mim e por Diego Cardoso. Minha participação foi justamente
+nas funções que calculam o equilíbrio de Nash.</p>
+:ET

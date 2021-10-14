@@ -104,4 +104,4 @@ $A \subseteq C$.
 
 Escreverei mais práticas com o passar do tempo. Se tiverem alguma sugestão
 ou não concordarem com o que escrevi acima, podem enviar um email para
-marcelogelati@impa.br me contatando.
+marcelogelati@gmail.com me contatando.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quem me deu unfollow? Um script no R"
+title:  "Quem me deu unfollow no Twitter? Um script no R"
 date:   2019-11-24 19:00:00 0000
 categories: post
 ---

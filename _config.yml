@@ -6,17 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Garagem de Economista
-email: marcelogelati@impa.br
+title: Meu blog pessoal
+email: marcelogelati@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Este é meu blog pessoal para compartilhar assuntos de meu interesse,
-  que tangenciam os vários assuntos da economia. Gosto muito de 
-  programação, teoria econômica, filosofia da ciência, matemática, 
-  psicologia e história do pensamento econômico. Tudo isso (e mais um pouco)
-  será postado aqui.
+  A princípio, era para postar coisas acadêmicas que tangenciavam mais ou menos economia,
+  mas hoje pretendo postar qualquer coisa que tiver vontade de postar.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "marcelogelati.github.io" # the base hostname & protocol for your site
-twitter_username: marcelogelati
 github_username:  marcelogelati
 
 # Build settings

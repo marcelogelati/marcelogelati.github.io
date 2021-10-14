@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/post/2019/09/09/topologia-e-medida.html">
-  <link rel="alternate" type="application/rss+xml" title="Garagem de Economista" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Meu blog pessoal" href="http://localhost:4000/feed.xml">
 
   <!-- <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -44,7 +44,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Garagem de Economista</a>
+    <a class="site-title" href="/">Meu blog pessoal</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -93,7 +93,7 @@ estudam formalmente isso, mas cujo interesse pela matemática se dá desde cedo.
 conjunto aberto. Mas, o que é um conjunto aberto? Se estamos no conjunto $\mathbb{R}$, pensamos
 que os abertos são uniões de conjuntos do tipo</p>
 
-<script type="math/tex; mode=display">(-\infty, a), \ (b, \infty) \ \text{e} \ (a, b)</script>
+\[(-\infty, a), \ (b, \infty) \ \text{e} \ (a, b)\]
 
 <p>onde $a, b \in \mathbb{R}$.</p>
 
@@ -103,8 +103,8 @@ E fora do $\mathbb{R}$, como definimos os abertos? Bom, podemos definir abertos 
 ponto $x$ de $A$ conseguimos achar uma bola aberta $B$ tal que $x$ está em $B$
 e $B$ está totalmente contido em $A$. Em símbolos, dizemos que $A$ é aberto se</p>
 
-<script type="math/tex; mode=display">\forall x \in A \  \exists B \ \text{onde B é uma bola aberta (em um sentido preciso) tal que} \\
-x \in B \ \text{e} \ B \subseteq A</script>
+\[\forall x \in A \  \exists B \ \text{onde B é uma bola aberta (em um sentido preciso) tal que} \\
+x \in B \ \text{e} \ B \subseteq A\]
 
 <p>Curiosamente, na reta esta definição coincide com os conjuntos que eu disse que eram
 abertos acima.</p>
@@ -119,27 +119,27 @@ O que é um aberto, então, segundo essa definição abstrata? Vamos lá, às fo
 
 <p>Antes de definir o que é uma topologia, preciso especificar o que é um conjunto
 de subconjuntos de $X$. Para clarificar, vou mostrar um exemplo.
-Suponha que <script type="math/tex">X = \{a, b, c\}</script>. Então, o conjunto das partes de $X$, denotado por $\wp(X)$,
+Suponha que \(X = \{a, b, c\}\). Então, o conjunto das partes de $X$, denotado por $\wp(X)$,
 é o conjunto de <em>todos</em> subconjuntos de $X$, isto é,</p>
 
-<script type="math/tex; mode=display">\wp(X) := \{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\} \}</script>
+\[\wp(X) := \{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\} \}\]
 
 <p>O conjunto acima é um conjunto de subconjuntos. Podemos pensar em um conjunto de subconjuntos
 menor, como por exemplo,</p>
 
-<script type="math/tex; mode=display">B := \{\{a\}, \{b, c\}, \{a, b\} \}</script>
+\[B := \{\{a\}, \{b, c\}, \{a, b\} \}\]
 
 <p>Em outras palavras, um conjunto de subconjuntos de $X$ é um conjunto $M$ tal que
 se $A \in M$, então $A \subseteq X$. Veja o exemplo anterior para checar essa definição: temos que
-<script type="math/tex">\{b, c\} \in B</script> e $B \subseteq X$.</p>
+\(\{b, c\} \in B\) e $B \subseteq X$.</p>
 
 <p>Pegue um conjunto $X$. Vamos definir o que é topologia. Uma topologia $\tau$ é um
 conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:</p>
 
-<script type="math/tex; mode=display">1. \ \varnothing \in \tau, \ X \in \tau \\
+\[1. \ \varnothing \in \tau, \ X \in \tau \\
   2. \ \text{Se pegarmos uma família} \ \{V_{\alpha}\}, \ \text{onde cada} \ V_{\alpha} \in \tau, \\
   \text{então} \ \bigcup_{\alpha} V_{\alpha} \in \tau \\
-  3. \ \text{Se pegarmos} \ V_1 \in \tau, \ldots, V_n \in \tau, \ \text{então} \ \bigcap\limits_{i = 1}^n V_i \in \tau</script>
+  3. \ \text{Se pegarmos} \ V_1 \in \tau, \ldots, V_n \in \tau, \ \text{então} \ \bigcap\limits_{i = 1}^n V_i \in \tau\]
 
 <p>Ufa, quanta formalização! Vou tentar explicar em português:</p>
 
@@ -173,13 +173,13 @@ Sim, é só isso! Todo elemento de $\tau$ é um aberto e todo aberto é elemento
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Garagem de Economista</h2>
+    <h2 class="footer-heading">Meu blog pessoal</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Garagem de Economista</li>
-          <li><a href="mailto:marcelogelati@impa.br">marcelogelati@impa.br</a></li>
+          <li>Meu blog pessoal</li>
+          <li><a href="mailto:marcelogelati@gmail.com">marcelogelati@gmail.com</a></li>
         </ul>
       </div>
 
@@ -194,17 +194,11 @@ Sim, é só isso! Todo elemento de $\tau$ é um aberto e todo aberto é elemento
           
 
           
-          <li>
-            <a href="https://twitter.com/marcelogelati"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
-</span><span class="username">marcelogelati</span></a>
-
-          </li>
-          
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Este é meu blog pessoal para compartilhar assuntos de meu interesse, que tangenciam os vários assuntos da economia. Gosto muito de  programação, teoria econômica, filosofia da ciência, matemática,  psicologia e história do pensamento econômico. Tudo isso (e mais um pouco) será postado aqui.
+        <p>Este é meu blog pessoal para compartilhar assuntos de meu interesse, A princípio, era para postar coisas acadêmicas que tangenciavam mais ou menos economia, mas hoje pretendo postar qualquer coisa que tiver vontade de postar.
 </p>
       </div>
     </div>

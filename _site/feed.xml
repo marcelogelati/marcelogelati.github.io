@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Garagem de Economista</title>
-    <description>Este é meu blog pessoal para compartilhar assuntos de meu interesse, que tangenciam os vários assuntos da economia. Gosto muito de  programação, teoria econômica, filosofia da ciência, matemática,  psicologia e história do pensamento econômico. Tudo isso (e mais um pouco) será postado aqui.
+    <title>Meu blog pessoal</title>
+    <description>Este é meu blog pessoal para compartilhar assuntos de meu interesse, A princípio, era para postar coisas acadêmicas que tangenciavam mais ou menos economia, mas hoje pretendo postar qualquer coisa que tiver vontade de postar.
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Feb 2020 16:24:18 -0300</pubDate>
-    <lastBuildDate>Fri, 28 Feb 2020 16:24:18 -0300</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Thu, 14 Oct 2021 08:29:43 -0300</pubDate>
+    <lastBuildDate>Thu, 14 Oct 2021 08:29:43 -0300</lastBuildDate>
+    <generator>Jekyll v4.2.1</generator>
     
       <item>
-        <title>Quem me deu unfollow? Um script no R</title>
+        <title>Quem me deu unfollow no Twitter? Um script no R</title>
         <description>&lt;p&gt;Criei um script para você verificar quem te seguiu ou parou de seguir no Twitter.
 O script é auto explicativo e pode ser baixado clicando &lt;a href=&quot;https://github.com/marcelogelati/marcelogelati.github.io/blob/master/unfollow.R&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 
@@ -20,7 +20,7 @@ A função do código é simplesmente ver a diferença de seguidores entre um pe
 
 &lt;h1 id=&quot;atualização-28-02-20&quot;&gt;Atualização 28-02-20&lt;/h1&gt;
 
-&lt;p&gt;Temos um novo script mais eficiente e que usa apenas o pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;rtweet&lt;/code&gt;.
+&lt;p&gt;Temos um novo script mais eficiente e que usa apenas o pacote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rtweet&lt;/code&gt;.
 É preferível que usem este ao invés do disponibilizado acima, mas vou manter a
 versão antiga ali. Clique &lt;a href=&quot;https://github.com/marcelogelati/marcelogelati.github.io/blob/master/unfollow2.R&quot;&gt;aqui&lt;/a&gt;
 para baixar o novo código.&lt;/p&gt;
@@ -44,7 +44,7 @@ estudam formalmente isso, mas cujo interesse pela matemática se dá desde cedo.
 conjunto aberto. Mas, o que é um conjunto aberto? Se estamos no conjunto $\mathbb{R}$, pensamos
 que os abertos são uniões de conjuntos do tipo&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(-\infty, a), \ (b, \infty) \ \text{e} \ (a, b)&lt;/script&gt;
+\[(-\infty, a), \ (b, \infty) \ \text{e} \ (a, b)\]
 
 &lt;p&gt;onde $a, b \in \mathbb{R}$.&lt;/p&gt;
 
@@ -54,8 +54,8 @@ E fora do $\mathbb{R}$, como definimos os abertos? Bom, podemos definir abertos 
 ponto $x$ de $A$ conseguimos achar uma bola aberta $B$ tal que $x$ está em $B$
 e $B$ está totalmente contido em $A$. Em símbolos, dizemos que $A$ é aberto se&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\forall x \in A \  \exists B \ \text{onde B é uma bola aberta (em um sentido preciso) tal que} \\
-x \in B \ \text{e} \ B \subseteq A&lt;/script&gt;
+\[\forall x \in A \  \exists B \ \text{onde B é uma bola aberta (em um sentido preciso) tal que} \\
+x \in B \ \text{e} \ B \subseteq A\]
 
 &lt;p&gt;Curiosamente, na reta esta definição coincide com os conjuntos que eu disse que eram
 abertos acima.&lt;/p&gt;
@@ -70,27 +70,27 @@ O que é um aberto, então, segundo essa definição abstrata? Vamos lá, às fo
 
 &lt;p&gt;Antes de definir o que é uma topologia, preciso especificar o que é um conjunto
 de subconjuntos de $X$. Para clarificar, vou mostrar um exemplo.
-Suponha que &lt;script type=&quot;math/tex&quot;&gt;X = \{a, b, c\}&lt;/script&gt;. Então, o conjunto das partes de $X$, denotado por $\wp(X)$,
+Suponha que \(X = \{a, b, c\}\). Então, o conjunto das partes de $X$, denotado por $\wp(X)$,
 é o conjunto de &lt;em&gt;todos&lt;/em&gt; subconjuntos de $X$, isto é,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\wp(X) := \{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\} \}&lt;/script&gt;
+\[\wp(X) := \{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\} \}\]
 
 &lt;p&gt;O conjunto acima é um conjunto de subconjuntos. Podemos pensar em um conjunto de subconjuntos
 menor, como por exemplo,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;B := \{\{a\}, \{b, c\}, \{a, b\} \}&lt;/script&gt;
+\[B := \{\{a\}, \{b, c\}, \{a, b\} \}\]
 
 &lt;p&gt;Em outras palavras, um conjunto de subconjuntos de $X$ é um conjunto $M$ tal que
 se $A \in M$, então $A \subseteq X$. Veja o exemplo anterior para checar essa definição: temos que
-&lt;script type=&quot;math/tex&quot;&gt;\{b, c\} \in B&lt;/script&gt; e $B \subseteq X$.&lt;/p&gt;
+\(\{b, c\} \in B\) e $B \subseteq X$.&lt;/p&gt;
 
 &lt;p&gt;Pegue um conjunto $X$. Vamos definir o que é topologia. Uma topologia $\tau$ é um
 conjunto de subconjuntos de $X$ que satisfaz as seguintes propriedades:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;1. \ \varnothing \in \tau, \ X \in \tau \\
+\[1. \ \varnothing \in \tau, \ X \in \tau \\
   2. \ \text{Se pegarmos uma família} \ \{V_{\alpha}\}, \ \text{onde cada} \ V_{\alpha} \in \tau, \\
   \text{então} \ \bigcup_{\alpha} V_{\alpha} \in \tau \\
-  3. \ \text{Se pegarmos} \ V_1 \in \tau, \ldots, V_n \in \tau, \ \text{então} \ \bigcap\limits_{i = 1}^n V_i \in \tau&lt;/script&gt;
+  3. \ \text{Se pegarmos} \ V_1 \in \tau, \ldots, V_n \in \tau, \ \text{então} \ \bigcap\limits_{i = 1}^n V_i \in \tau\]
 
 &lt;p&gt;Ufa, quanta formalização! Vou tentar explicar em português:&lt;/p&gt;
 
@@ -179,21 +179,21 @@ tornam mais fácil a comparação de uma dada teoria com teorias rivais”&lt;/p
       <item>
         <title>Equilíbrio de Nash no R: pacote Recon</title>
         <description>&lt;p&gt;Nesse post mostrarei como encontrar no R o equilíbrio de Nash de um jogo simultâneo, tanto em estratégias mistas como em estratégias puras. Isso será feito
-através do pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;Recon&lt;/code&gt;, criado pelo &lt;a href=&quot;https://twitter.com/pedroocava&quot;&gt;Pedro Cavalcante de Oliveira&lt;/a&gt;
+através do pacote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Recon&lt;/code&gt;, criado pelo &lt;a href=&quot;https://twitter.com/pedroocava&quot;&gt;Pedro Cavalcante de Oliveira&lt;/a&gt;
 e colaborado por mim e por Diego Cardoso. Minha participação foi justamente
 nas funções que calculam o equilíbrio de Nash.&lt;/p&gt;
 
-&lt;p&gt;O pacote &lt;code class=&quot;highlighter-rouge&quot;&gt;Recon&lt;/code&gt; é uma tentativa de integrar o básico de economia com
+&lt;p&gt;O pacote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Recon&lt;/code&gt; é uma tentativa de integrar o básico de economia com
 programação, de maneira que os estudantes possam interagir computacionalmente
 com o que estão estudando. É uma ferramenta de ensino poderosíssima que
 permite aos alunos explorarem a matéria de uma maneira diferente, ao passo que
 lidam com ferramentas também necessárias para o dia-a-dia do economista.&lt;/p&gt;
 
-&lt;p&gt;Você pode instalar o &lt;code class=&quot;highlighter-rouge&quot;&gt;Recon&lt;/code&gt; diretamente via CRAN usando &lt;code class=&quot;highlighter-rouge&quot;&gt;install.packages('Recon')&lt;/code&gt;
-ou direto do Github usando &lt;code class=&quot;highlighter-rouge&quot;&gt;devtools::install_github(&quot;pedrocava/Recon&quot;)&lt;/code&gt;. A versão
+&lt;p&gt;Você pode instalar o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Recon&lt;/code&gt; diretamente via CRAN usando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages('Recon')&lt;/code&gt;
+ou direto do Github usando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;devtools::install_github(&quot;pedrocava/Recon&quot;)&lt;/code&gt;. A versão
 do Github estará, em geral, mais autalizada.&lt;/p&gt;
 
-&lt;p&gt;Bom, vamos aos exemplos. Primeiro Trataremos da função &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_pure_nasheq()&lt;/code&gt;, abreviação
+&lt;p&gt;Bom, vamos aos exemplos. Primeiro Trataremos da função &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_pure_nasheq()&lt;/code&gt;, abreviação
 para &lt;em&gt;Simultaneous Pure Nash Equilibria&lt;/em&gt;, que irá calcular os equilíbrios de Nash puros
 (ou degenerados) em jogos simultâneos. Há apenas dois argumentos para essa função:
 a matriz do jogador das linhas e a matriz do jogador das colunas. O primeiro jogo
@@ -203,7 +203,7 @@ imagem abaixo:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/../images/prisioneiro.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Se você já é familiarizado com teoria dos jogos, sabe que o equilíbrio de Nash se
-dá na combinação de estratégias &lt;script type=&quot;math/tex&quot;&gt;\{ \text{Confessar}, \text{Confessar} \}&lt;/script&gt;.
+dá na combinação de estratégias \(\{ \text{Confessar}, \text{Confessar} \}\).
 Como que conseguiremos esse resultado no R? Primeiro, precisamos montar a
 matriz dos dois jogadores. Como exemplo, veja a matriz do prisioneiro 1 (jogador
 das linhas):&lt;/p&gt;
@@ -220,7 +220,7 @@ das linhas):&lt;/p&gt;
 &lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pris2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;byrow&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nrow&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Agora colocamos na função &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_pure_nasheq()&lt;/code&gt; os argumentos &lt;code class=&quot;highlighter-rouge&quot;&gt;pris1&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;pris2&lt;/code&gt;,
+&lt;p&gt;Agora colocamos na função &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_pure_nasheq()&lt;/code&gt; os argumentos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pris1&lt;/code&gt; e &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pris2&lt;/code&gt;,
 nesta ordem:&lt;/p&gt;
 
 &lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sim_pure_nasheq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pris1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pris2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -228,11 +228,11 @@ nesta ordem:&lt;/p&gt;
 
 &lt;p&gt;O output será uma lista com todos os equilíbrios, dizendo a estratégia da linha
 e a estratégia da coluna, respectivamente, que correspondem ao equilíbrio.
-No nosso caso, o output é &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;1&quot; &quot;1&quot;&lt;/code&gt;, que significa que o equilíbrio se dá
-no perfil de estratégias  &lt;script type=&quot;math/tex&quot;&gt;\{ \text{Linha 1}, \text{Coluna 1} \}&lt;/script&gt;, que é exatamente
-&lt;script type=&quot;math/tex&quot;&gt;\{ \text{Confessar}, \text{Confessar} \}&lt;/script&gt;.&lt;/p&gt;
+No nosso caso, o output é &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;1&quot; &quot;1&quot;&lt;/code&gt;, que significa que o equilíbrio se dá
+no perfil de estratégias  \(\{ \text{Linha 1}, \text{Coluna 1} \}\), que é exatamente
+\(\{ \text{Confessar}, \text{Confessar} \}\).&lt;/p&gt;
 
-&lt;p&gt;Antes de vermos a função &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_mixed_nasheq&lt;/code&gt;, abreviação de &lt;em&gt;Simultaneous Mixed Nash
+&lt;p&gt;Antes de vermos a função &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_mixed_nasheq&lt;/code&gt;, abreviação de &lt;em&gt;Simultaneous Mixed Nash
 Equilibria&lt;/em&gt; (equilíbrios em estratégias mistas), vamos a mais dois exemplos:
 equilíbrios múltiplos e nenhum equilíbrio. Vemos primeiro o caso em que não há
 equilíbrio.&lt;/p&gt;
@@ -262,34 +262,34 @@ maneira:&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sim_pure_nasheq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ave1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ave2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;E o resultado será &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;2&quot; &quot;1&quot;&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;1&quot; &quot;2&quot;&lt;/code&gt;, que corresponde aos perfis de estratégia
-&lt;script type=&quot;math/tex&quot;&gt;\{ \text{Pomba}, \text{Águia} \}&lt;/script&gt; e &lt;script type=&quot;math/tex&quot;&gt;\{ \text{Águia}, \text{Pomba} \}&lt;/script&gt;,
+&lt;p&gt;E o resultado será &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;2&quot; &quot;1&quot;&lt;/code&gt; e &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;1&quot; &quot;2&quot;&lt;/code&gt;, que corresponde aos perfis de estratégia
+\(\{ \text{Pomba}, \text{Águia} \}\) e \(\{ \text{Águia}, \text{Pomba} \}\),
 respectivamente. Temos nossos múltiplos equilíbrios.&lt;/p&gt;
 
 &lt;p&gt;O jogo Águia-Pomba é interessante para nossos propósitos, pois além de ter
 dois equilíbrios em estratégias puras, possui também um equilíbrio em estratégia
 mista.
-Como comentado acima, vamos utilizar a função &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_mixed_nasheq()&lt;/code&gt;. Rode-a para
+Como comentado acima, vamos utilizar a função &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_mixed_nasheq()&lt;/code&gt;. Rode-a para
 ver o que acontece.&lt;/p&gt;
 
 &lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sim_mixed_nasheq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ave1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ave2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Como você deve ter visto, o perfil de estratégias aqui é &lt;script type=&quot;math/tex&quot;&gt;\{ (0.5, 0.5), (0.5, 0.5)
-  \}&lt;/script&gt;, que
+&lt;p&gt;Como você deve ter visto, o perfil de estratégias aqui é \(\{ (0.5, 0.5), (0.5, 0.5)
+  \}\), que
 significa dizer que cada jogador joga uma estratégia com 50% de chance.&lt;/p&gt;
 
 &lt;p&gt;Antes de terminar o post, gostaria de ressaltar duas coisas. A primeira, é que
 estas funções ainda estão em atualização e em breve teremos melhorias em termos
 de estética e funcionalidade. A novidade principal é
-a fusão dessas duas funções em apenas uma, &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_nasheq()&lt;/code&gt;, onde você poderá
+a fusão dessas duas funções em apenas uma, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_nasheq()&lt;/code&gt;, onde você poderá
 especificar através de um terceiro argumento se quer procurar o equilíbrio
 em estratégias puras ou mistas.&lt;/p&gt;
 
 &lt;p&gt;O segundo ponto importante, que não foi mencionado ao longo dos exemplos,
 refere-se ao funcionamento das funções. Ambas as funções só resolvem jogos
-de dois jogadores. No entanto, enquanto a função &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_pure_nasheq()&lt;/code&gt; resolve
-qualquer matriz $n \times m$, a função &lt;code class=&quot;highlighter-rouge&quot;&gt;sim_mixed_nasheq()&lt;/code&gt; só permite
+de dois jogadores. No entanto, enquanto a função &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_pure_nasheq()&lt;/code&gt; resolve
+qualquer matriz $n \times m$, a função &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sim_mixed_nasheq()&lt;/code&gt; só permite
 matrizes $2 \times 2$ como input.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jul 2019 23:00:00 -0300</pubDate>
@@ -311,24 +311,24 @@ se confundir em sua notação. Sem mais delongas, vamos a elas:&lt;/p&gt;
 
 &lt;p&gt;Minha primeira sugestão é reservar reservar a letra $n$ para
 sequências e a letra $d$ para a dimensão do espaço euclidiano.
-Isto é, dada a sequência &lt;script type=&quot;math/tex&quot;&gt;\{ x_n \}_{n \in \mathbb{N}}&lt;/script&gt;, escrevemos
+Isto é, dada a sequência \(\{ x_n \}_{n \in \mathbb{N}}\), escrevemos
 $x_n$ para denotar o seu enésimo termo. Por outro lado, $\mathbb{R}^d$ é o produto
 cartesiano de $\mathbb{R}$ $d$ vezes.&lt;/p&gt;
 
 &lt;p&gt;Minha próxima sugestão também envolve sequências e coordenadas do espaço
 euclidiano. Normalmente escrevemos um vetor $v \in \mathbb{R}^d$ da seguinte maneira:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;v = (v_1, \ v_2, \ldots, \ v_d)&lt;/script&gt;
+\[v = (v_1, \ v_2, \ldots, \ v_d)\]
 
-&lt;p&gt;Caso quiséssemos tomar uma sequência &lt;script type=&quot;math/tex&quot;&gt;\{ v_n \}_{n \in \mathbb{N}} \subseteq \mathbb{R}^d&lt;/script&gt;,
+&lt;p&gt;Caso quiséssemos tomar uma sequência \(\{ v_n \}_{n \in \mathbb{N}} \subseteq \mathbb{R}^d\),
 representaríamos as coordenadas do vetor assim:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_n = (v_{1, n}, \ v_{2, n}, \ldots, \ v_{d, n})&lt;/script&gt;
+\[v_n = (v_{1, n}, \ v_{2, n}, \ldots, \ v_{d, n})\]
 
 &lt;p&gt;Mas essa notação é extremamente confusa! Portanto, é mais adequado reservarmos
 a notação abaixo para representar as coordenadas:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;v = (v[1], \ v[2], \ldots, \  v[d])&lt;/script&gt;
+\[v = (v[1], \ v[2], \ldots, \  v[d])\]
 
 &lt;p&gt;Esta notação é vantajosa em duas maneiras: ela explicita automaticamente que
 estamos tratando de coordenadas e conseguimos deixamos o subscrito livre. Ela é inspirada
@@ -337,7 +337,7 @@ através de colchetes.&lt;/p&gt;
 
 &lt;p&gt;Note como a sequência anterior fica mais limpa:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_n = (v_n[1], \ v_n[2], \ldots, \ v_n[d])&lt;/script&gt;
+\[v_n = (v_n[1], \ v_n[2], \ldots, \ v_n[d])\]
 
 &lt;p&gt;O lado ruim dessa notação é que ela é mais trabalhosa de escrever manualmente, pois
  é preciso abrir e fechar colchetes a cada coordenada.&lt;/p&gt;
@@ -347,13 +347,13 @@ através de colchetes.&lt;/p&gt;
 &lt;p&gt;Digamos que você queira dizer que uma certa propriedade $P$ vale para os números
 $x_1, x_2, \ldots, x_k$. Abaixo estão quatro maneiras de escrever formalmente isso:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i \in \{1, 2, \ldots, k\}&lt;/script&gt;
+\[x_i \ \text{tem propriedade} \ P \; \forall i \in \{1, 2, \ldots, k\}\]
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i = 1, 2, \ldots, k&lt;/script&gt;
+\[x_i \ \text{tem propriedade} \ P \; \forall i = 1, 2, \ldots, k\]
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i \in \mathbb{N}, 1 \leq i \leq k&lt;/script&gt;
+\[x_i \ \text{tem propriedade} \ P \; \forall i \in \mathbb{N}, 1 \leq i \leq k\]
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i \ \text{tem propriedade} \ P \; \forall i \in [k] \label{indices}&lt;/script&gt;
+\[x_i \ \text{tem propriedade} \ P \; \forall i \in [k] \label{indices}\]
 
 &lt;p&gt;Minha recomendação é que se use o padrão definido em \eqref{indices}, por economizar
 tempo e espaço de escrita. Como é uma notação menos usual, você precisa definir
@@ -366,14 +366,14 @@ de introduzir variáveis novas. Suponha que você já tenha a variável $x$ e a 
 $y$ e quer introduzir uma nova variável $z$, que é a diferença das duas. Ao invés de escrever
 $z = x - y$, é bacana escrever&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;z := x - y&lt;/script&gt;
+\[z := x - y\]
 
 &lt;p&gt;pois torna explícito que você está construindo uma variável nova.&lt;/p&gt;
 
 &lt;p&gt;Por exemplo, para ilustrar a seção anterior, suponha que o leitor não
 conheça o significado de $[k]$. Informamos ao leitor nossa definição da seguinte maneira:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Definimos} \  [k] := \{1, \ldots, k \} \subseteq \mathbb{N}&lt;/script&gt;
+\[\text{Definimos} \  [k] := \{1, \ldots, k \} \subseteq \mathbb{N}\]
 
 &lt;h1 id=&quot;subconjuntos&quot;&gt;Subconjuntos&lt;/h1&gt;
 
@@ -402,7 +402,7 @@ $A \subseteq C$.&lt;/p&gt;
 
 &lt;p&gt;Escreverei mais práticas com o passar do tempo. Se tiverem alguma sugestão
 ou não concordarem com o que escrevi acima, podem enviar um email para
-marcelogelati@impa.br me contatando.&lt;/p&gt;
+marcelogelati@gmail.com me contatando.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Jun 2019 16:00:00 -0300</pubDate>
         <link>http://localhost:4000/post/2019/06/15/boas-praticas-matematicas.html</link>
