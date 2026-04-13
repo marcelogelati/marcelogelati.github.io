@@ -4,21 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marcelo Gelati</title>
-  <meta name="description" content="Academic homepage of Marcelo Gelati" />
+  <meta name="description" content="Marcelo Gelati" />
   <style>
     :root {
       --text: #222;
       --muted: #666;
-      --line: #e6e6e6;
+      --line: #e8e8e8;
       --accent: #1f4d8f;
       --bg: #ffffff;
       --maxw: 980px;
     }
-
     * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -26,16 +22,8 @@
       background: var(--bg);
       line-height: 1.7;
     }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .site-header {
       border-bottom: 1px solid var(--line);
       background: #fff;
@@ -43,7 +31,6 @@
       top: 0;
       z-index: 10;
     }
-
     .header-inner {
       max-width: var(--maxw);
       margin: 0 auto;
@@ -54,45 +41,34 @@
       gap: 20px;
       flex-wrap: wrap;
     }
-
     .brand {
       font-size: 1.4rem;
       font-weight: 700;
       color: var(--text);
     }
-
     .nav {
       display: flex;
       gap: 18px;
       flex-wrap: wrap;
     }
-
     .nav a {
       color: var(--text);
       font-size: 0.98rem;
+      padding-bottom: 2px;
     }
-
+    .nav a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+    }
     .hero {
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 56px 24px 28px;
+      padding: 56px 24px 40px;
       display: grid;
       grid-template-columns: 240px 1fr;
       gap: 40px;
       align-items: start;
     }
-
-    .photo {
-      width: 100%;
-      max-width: 220px;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 6px;
-      display: block;
-      background: #f0f0f0;
-      border: 1px solid var(--line);
-    }
-
     .photo-placeholder {
       width: 100%;
       max-width: 220px;
@@ -108,62 +84,37 @@
       padding: 18px;
       font-size: 0.95rem;
     }
-
     h1 {
       margin: 0 0 12px;
       font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      line-height: 1.12;
+      line-height: 1.1;
     }
-
-    .lead {
-      margin: 0 0 18px;
-      font-size: 1.06rem;
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.45rem;
     }
-
-    .meta {
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
+    .meta { color: var(--muted); margin-bottom: 18px; }
+    .lead { margin: 0 0 18px; font-size: 1.06rem; }
     .link-row {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
       margin-top: 14px;
     }
-
     .section {
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 22px 24px;
+      padding: 26px 24px;
       border-top: 1px solid var(--line);
     }
-
-    h2 {
-      margin: 0 0 14px;
-      font-size: 1.45rem;
-      font-weight: 700;
-    }
-
     .two-col {
       display: grid;
-      grid-template-columns: 1.3fr 0.9fr;
+      grid-template-columns: 1.25fr 0.95fr;
       gap: 48px;
     }
-
-    .item {
-      margin-bottom: 16px;
-    }
-
-    .item-title {
-      font-weight: 700;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
+    .item { margin-bottom: 16px; }
+    .item-title { font-weight: 700; }
+    .muted { color: var(--muted); }
     footer {
       max-width: var(--maxw);
       margin: 0 auto;
@@ -171,17 +122,9 @@
       color: var(--muted);
       font-size: 0.95rem;
     }
-
     @media (max-width: 780px) {
-      .hero,
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        gap: 26px;
-        padding-top: 34px;
-      }
+      .hero, .two-col { grid-template-columns: 1fr; }
+      .hero { gap: 26px; padding-top: 34px; }
     }
   </style>
 </head>
@@ -190,22 +133,18 @@
     <div class="header-inner">
       <div class="brand">Marcelo Gelati</div>
       <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="https://github.com/marcelogelati/marcelogelati.github.io/blob/cv.pdf">CV</a>
       </nav>
     </div>
   </header>
 
-  <main id="home">
+  <main>
     <section class="hero">
       <div>
-        <!-- Replace this placeholder with your own photo if you want.
-             Example:
-             <img class="photo" src="photo.jpg" alt="Marcelo Gelati"> -->
-        <div class="photo-placeholder">Add your photo here</div>
+        <img src="photo.jpeg" alt="Marcelo Gelati" style="width:100%;max-width:220px;border:1px solid #e8e8e8;border-radius:6px;display:block;"> 
       </div>
 
       <div>
@@ -214,95 +153,22 @@
         <p class="lead">
           I am an economist interested in family economics, economics of education,
           and environmental economics. My research combines theory and empirics to study
-          child development, labor supply, fertility, and household decision-making.
+          child development, labor supply, fertility, and household decision-making. 
         </p>
-        <p>
-          I received my Ph.D. in Economics from FGV EPGE in 2025. Here you can find
-          information about my research, teaching, and professional links.
-        </p>
-        <div class="link-row">
-          <a href="#research">Research</a>
-          <a href="#cv">CV</a>
-          <a href="mailto:marcelogelati@gmail.com">marcelogelati@gmail.com</a>
-          <a href="https://github.com/marcelogelati" target="_blank" rel="noopener">GitHub</a>
-        </div>
       </div>
     </section>
 
-    <section class="section" id="research">
-      <div class="two-col">
+    <section class="section">
+      <div class="one-col">
         <div>
-          <h2>Research</h2>
-          <p>
-            My main areas of interest are family economics, economics of education,
-            and environmental economics. I am especially interested in the interaction
-            between family environments, labor decisions, and long-run outcomes.
-          </p>
-          <div class="item">
-            <div class="item-title">Working papers</div>
-            <div class="muted">Add your paper titles, abstracts, or links here.</div>
-          </div>
-          <div class="item">
-            <div class="item-title">Publications</div>
-            <div class="muted">Add journal articles, book chapters, or accepted papers here.</div>
-          </div>
-          <div class="item">
-            <div class="item-title">Research notes</div>
-            <div class="muted">Add slides, replication files, or short notes here.</div>
-          </div>
-        </div>
-
-        <div>
-          <h2>Education</h2>
-          <div class="item">
-            <div class="item-title">Ph.D. in Economics</div>
-            <div>FGV EPGE, 2025</div>
-          </div>
-          <div class="item">
-            <div class="item-title">M.A. in Mathematical Economics</div>
-            <div>IMPA, 2021</div>
-          </div>
-          <div class="item">
-            <div class="item-title">B.A. in Economics</div>
-            <div>UFRGS, 2018</div>
-          </div>
+          <h2>Contact</h2>
+          <p class="item"><span class="item-title">Email:</span> <a href="mailto:marcelogelati@gmail.com">marcelogelati@gmail.com</a></p>
+          <p class="item"><span class="item-title">GitHub:</span> <a href="https://github.com/marcelogelati" target="_blank" rel="noopener">github.com/marcelogelati</a></p>
+          <p class="item"><span class="item-title">Based at</span> São Paulo, Brazil</p>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="teaching">
-      <h2>Teaching</h2>
-      <p class="muted">
-        Add courses, teaching assistantships, lecture notes, problem sets, or office hour information here.
-      </p>
-    </section>
-
-    <section class="section" id="cv">
-      <h2>CV</h2>
-      <p>
-        Replace the link below with your current CV:
-        <a href="YOUR-CV-LINK" target="_blank" rel="noopener">Download CV</a>
-      </p>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <p>
-        São Paulo, SP – Brazil<br>
-        <a href="mailto:marcelogelati@gmail.com">marcelogelati@gmail.com</a>
-      </p>
-      <p>
-        <a href="https://github.com/marcelogelati" target="_blank" rel="noopener">GitHub</a>
-        |
-        <a href="YOUR-LINKEDIN-LINK" target="_blank" rel="noopener">LinkedIn</a>
-        |
-        <a href="YOUR-LATTES-LINK" target="_blank" rel="noopener">Lattes</a>
-      </p>
     </section>
   </main>
 
-  <footer>
-    Simple academic homepage for GitHub Pages.
-  </footer>
 </body>
 </html>
